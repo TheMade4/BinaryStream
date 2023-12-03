@@ -1,2 +1,2 @@
 # BinaryStream
-BinaryStream libary for python
+BinaryStream library for python
