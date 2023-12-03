@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='binary-stream',
-    version='1.0.0.dev0',
+    version='1.0.1.dev0',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     license='MIT License',
