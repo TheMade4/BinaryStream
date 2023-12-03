@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name='binary-stream',
-    version='1.0.0-dev',
+    version='1.0.0.dev0',
     description=open('README.md').read(),
     license='MIT License',
     author='TheMade4',
