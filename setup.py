@@ -3,7 +3,8 @@ import setuptools
 setuptools.setup(
     name='binary-stream',
     version='1.0.0.dev0',
-    description=open('README.md').read(),
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     license='MIT License',
     author='TheMade4',
     url='https://github.com/TheMade4/BinaryStream',
