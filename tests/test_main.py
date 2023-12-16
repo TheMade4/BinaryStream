@@ -77,7 +77,11 @@ class MainTest(unittest.TestCase):
 
     def test_read(self):
         data = '2a002a00002a0000002a000000000000002a2a002a00002a0000002a000000000000002a51464228cccd404519999999999a0100'
-        self.binary_stream = BinaryStream(bytes.fromhex(data))
+        data = bytes.fromhex(data)
+        self.binary_stream = BinaryStream(data)
+        self.assertEqual(self.binary_stream.read(), data)
+        self.assertEqual(self.binary_stream.get_buffer(), data)
+        self.binary_stream.seek(0)
         self._read_all()
         data = [42, 42, 42, 42, 42, 42, 42, 42, 42, 42, 42.1875, 42.20000076293945, 42.2, True, False]
         self.assertListEqual(self.read_buffer, data)
