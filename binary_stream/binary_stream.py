@@ -65,44 +65,44 @@ class BinaryStream:
     def read_bool(self):
         return struct.unpack("!?", self.read(1))[0]
 
-    def write_int8(self, val):
-        self.write(struct.pack("!b", val))
+    def write_int8(self, value):
+        self.write(struct.pack("!b", value))
 
-    def write_uint8(self, val):
-        self.write(struct.pack("!B", val))
+    def write_uint8(self, value):
+        self.write(struct.pack("!B", value))
 
-    def write_int16(self, val):
-        self.write(struct.pack("!h", val))
+    def write_int16(self, value):
+        self.write(struct.pack("!h", value))
 
-    def write_uint16(self, val):
-        self.write(struct.pack("!H", val))
+    def write_uint16(self, value):
+        self.write(struct.pack("!H", value))
 
-    def write_int24(self, val):
-        self.write(struct.pack("!i", val)[1:])
+    def write_int24(self, value):
+        self.write(struct.pack("!i", value)[1:])
 
-    def write_uint24(self, val):
-        self.write(struct.pack("!I", val)[1:])
+    def write_uint24(self, value):
+        self.write(struct.pack("!I", value)[1:])
 
-    def write_int32(self, val):
-        self.write(struct.pack("!i", val))
+    def write_int32(self, value):
+        self.write(struct.pack("!i", value))
 
-    def write_uint32(self, val):
-        self.write(struct.pack("!I", val))
+    def write_uint32(self, value):
+        self.write(struct.pack("!I", value))
 
-    def write_int64(self, val):
-        self.write(struct.pack("!q", val))
+    def write_int64(self, value):
+        self.write(struct.pack("!q", value))
 
-    def write_uint64(self, val):
-        self.write(struct.pack("!Q", val))
+    def write_uint64(self, value):
+        self.write(struct.pack("!Q", value))
 
-    def write_float16(self, val):
-        self.write(struct.pack("!e", val))
+    def write_float16(self, value):
+        self.write(struct.pack("!e", value))
 
-    def write_float32(self, val):
-        self.write(struct.pack("!f", val))
+    def write_float32(self, value):
+        self.write(struct.pack("!f", value))
 
-    def write_float64(self, val):
-        self.write(struct.pack("!d", val))
+    def write_float64(self, value):
+        self.write(struct.pack("!d", value))
 
-    def write_bool(self, val):
-        self.write(struct.pack("!?", val))
+    def write_bool(self, value):
+        self.write(struct.pack("!?", value))
